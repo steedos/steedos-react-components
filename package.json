@@ -2,11 +2,14 @@
   "name": "@steedos/react-components",
   "version": "0.1.0",
   "private": true,
+  "main": "src/components/index.js",
   "dependencies": {
     "@babel/core": "7.2.2",
     "@salesforce-ux/design-system": "^2.8.3",
     "@salesforce/design-system-react": "^0.9.6",
     "@svgr/webpack": "4.1.0",
+    "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.2",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
@@ -79,11 +82,11 @@
     "@storybook/react": "^5.1.0-alpha.5",
     "babel-loader": "^8.0.5",
     "webpack": "4.28.3",
+    "webpack-dev-middleware": "^1.12.0",
     "webpack-dev-server": "3.1.14",
+    "webpack-hot-middleware": "^2.18.2",
     "webpack-manifest-plugin": "2.0.4",
-    "workbox-webpack-plugin": "3.6.3",
-		"webpack-dev-middleware": "^1.12.0",
-		"webpack-hot-middleware": "^2.18.2"
+    "workbox-webpack-plugin": "3.6.3"
   },
   "jest": {
     "collectCoverageFrom": [

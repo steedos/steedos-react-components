@@ -1,14 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { IconSettings,Textarea } from  '@salesforce/design-system-react';
-import SteedosGlobalNavigationBar from '..';
+import GlobalNavigationBar from '..';
 
-storiesOf("SteedosGlobalNavigationBar", module)
+storiesOf("GlobalNavigationBar", module)
 	.addDecorator((getStory) => (
 		<div>
 			<IconSettings iconPath="/assets/icons">{getStory()}</IconSettings>
 		</div>
 	))
 	.add('Standard', () => (
-		<SteedosGlobalNavigationBar/>
+		<GlobalNavigationBar/>
 	))
