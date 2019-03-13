@@ -49,11 +49,7 @@
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
     "terser-webpack-plugin": "1.2.2",
-    "url-loader": "1.1.2",
-    "webpack": "4.28.3",
-    "webpack-dev-server": "3.1.14",
-    "webpack-manifest-plugin": "2.0.4",
-    "workbox-webpack-plugin": "3.6.3"
+    "url-loader": "1.1.2"
   },
   "scripts": {
     "start": "node scripts/start.js",
@@ -73,6 +69,7 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "@babel/plugin-transform-react-jsx-source": "^7.2.0",
     "@salesforce/babel-preset-design-system-react": "^3.0.0",
@@ -80,7 +77,13 @@
     "@storybook/addon-links": "^5.1.0-alpha.5",
     "@storybook/addons": "^5.1.0-alpha.5",
     "@storybook/react": "^5.1.0-alpha.5",
-    "babel-loader": "^8.0.5"
+    "babel-loader": "^8.0.5",
+    "webpack": "4.28.3",
+    "webpack-dev-server": "3.1.14",
+    "webpack-manifest-plugin": "2.0.4",
+    "workbox-webpack-plugin": "3.6.3",
+		"webpack-dev-middleware": "^1.12.0",
+		"webpack-hot-middleware": "^2.18.2"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -128,6 +131,9 @@
     ]
   },
   "babel": {
+    "plugins": [
+      "@babel/plugin-proposal-export-default-from"
+    ],
     "presets": [
       "react-app"
     ]
