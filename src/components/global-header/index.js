@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import { GlobalHeader,GlobalHeaderSearch,GlobalHeaderButton,GlobalHeaderDropdown,GlobalHeaderProfile } from '@salesforce/design-system-react';
+import GlobalNavigationBar from "../global-navigation-bar";
 
 class SteedosGlobalHeader extends Component {
   render() {
     return (
 			<GlobalHeader
-				logoSrc="/assets/images/logo.svg"
+				logoSrc="/assets/images/logo.svg" 
+				navigation={
+					<GlobalNavigationBar/>
+				}
 				onSkipToContent={() => {
 					console.log('>>> Skip to Content Clicked');
 				}}

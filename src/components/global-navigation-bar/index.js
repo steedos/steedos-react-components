@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { GlobalNavigationBar,GlobalNavigationBarRegion,GlobalNavigationBarLink,GlobalNavigationBarDropdown } from '@salesforce/design-system-react';
 import { AppLauncher,AppLauncherSection,AppLauncherTile } from '@salesforce/design-system-react';
 import { Button, Icon  } from '@salesforce/design-system-react';
-import "./style.css";
 
 class SteedosGlobalNavigationBar extends Component {
     render() {
