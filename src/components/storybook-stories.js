@@ -10,5 +10,6 @@
  * framework (http://localhost:8001).
  */
 
+export SteedosApp from './app/__docs__/storybook-stories';
 export SteedosGlobalHeader from './global-header/__docs__/storybook-stories';
 export SteedosGlobalNavigationBar from './global-navigation-bar/__docs__/storybook-stories';

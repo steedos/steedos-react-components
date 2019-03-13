@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import { IconSettings } from "@salesforce/design-system-react";
-import SteedosGlobalHeader from './components/global-header';
-import SteedosGlobalNavigationBar from './components/global-navigation-bar';
+import SteedosApp from './components/app';
 
 class App extends Component {
   render() {
     return (
 		<IconSettings iconPath="/assets/icons">
-			<SteedosGlobalHeader>
-			</SteedosGlobalHeader>
-			<SteedosGlobalNavigationBar/>
+			<SteedosApp/>
 		</IconSettings>
 		);
   }

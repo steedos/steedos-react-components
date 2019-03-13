@@ -5,7 +5,7 @@ import SteedosGlobalNavigationBar from '..';
 
 storiesOf("SteedosGlobalNavigationBar", module)
 	.addDecorator((getStory) => (
-		<div className="slds-p-around_medium">
+		<div>
 			<IconSettings iconPath="/assets/icons">{getStory()}</IconSettings>
 		</div>
 	))
